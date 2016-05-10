@@ -1,0 +1,25 @@
+
+<ion-navbar *navbar>
+  <button menuToggle>
+    <ion-icon name="menu"></ion-icon>
+  </button>
+  <ion-title>Getting Started</ion-title>
+</ion-navbar>
+
+
+<ion-content padding class="getting-started">
+
+  <h3>OH OK</h3>
+  <p>
+     Get it started!
+  </p>
+  <p>
+<!--     <button primary menuToggle>Toggle Menu</button> -->
+  </p>
+
+  <p>
+    <button primary (click)="goToSearch()">Go to Search</button>
+    <button primary [navPush]="theSearchPage">NavPush</button>
+  </p>
+
+</ion-content>
